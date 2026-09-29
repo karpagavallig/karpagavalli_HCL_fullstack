@@ -1,0 +1,26 @@
+/* Layout styles for the input form */
+
+.form1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.form1 input,
+.form1 textarea,
+.form1 button {
+  width: 60%;
+}
+
+.form1 button {
+  margin-bottom: 20px;
+}
+
+.form1 input {
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: blanchedalmond;
+  color: #000000;
+  cursor: pointer;
+}

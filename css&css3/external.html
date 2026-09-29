@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Basic Design</title>
+
+    <style>
+
+        /* BODY */
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* MAIN CONTAINER */
+        .container {
+            width: 500px;
+            height: 600px;
+
+            background-color: white;
+
+            border: 3px solid navy;
+            border-radius: 10px;
+
+            margin: 30px auto;
+            padding: 30px;
+
+            box-shadow: 4px 4px 15px gray;
+
+            text-align: center;
+        }
+
+        /* HEADING */
+        h1 {
+            color: navy;
+            background-color: lightblue;
+
+            width: 400px;
+            height: 50px;
+
+            border: 2px solid navy;
+            border-radius: 5px;
+
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        /* PARAGRAPH */
+        p {
+            color: black;
+            font-size: 18px;
+
+            margin: 20px;
+            padding: 10px;
+        }
+
+        /* TEXT BOX */
+        input {
+            width: 350px;
+            height: 35px;
+
+            background-color: white;
+
+            border: 2px solid gray;
+            border-radius: 5px;
+
+            margin: 10px;
+            padding: 5px;
+
+            font-size: 16px;
+        }
+
+        /* BUTTON */
+        button {
+            width: 150px;
+            height: 45px;
+
+            background-color: navy;
+            color: white;
+
+            border: 2px solid darkblue;
+            border-radius: 8px;
+
+            margin: 15px;
+            padding: 10px;
+
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* BUTTON HOVER */
+        button:hover {
+            background-color: blue;
+        }
+
+        /* BOX */
+        .box {
+            width: 200px;
+            height: 80px;
+
+            background-color: lightgreen;
+
+            border: 3px solid green;
+            border-radius: 8px;
+
+            margin: 20px auto;
+            padding: 15px;
+
+            box-shadow: 2px 2px 8px gray;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>CSS Basic Design</h1>
+
+        <p>
+            This program demonstrates basic CSS properties.
+        </p>
+
+        <input type="text" placeholder="Enter your name">
+
+        <br>
+
+        <input type="email" placeholder="Enter your email">
+
+        <br>
+
+        <button onclick="alert('Button Clicked!')">
+            Click Me
+        </button>
+
+        <div class="box">
+            Basic CSS Box
+        </div>
+
+    </div>
+
+</body>
+</html>

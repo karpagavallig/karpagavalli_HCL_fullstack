@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- basic form -->
+    <form id="basicForm" class="form1">
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="inputField" name="name" required>
+        <button onclick="handleNameClick(event)">autofill your name "Abhishek"</button>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="inputField" name="email" required>
+        <button onclick="handleEmailClick(event)">autofill your email</button>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" class="inputField" rows="4" required></textarea>
+        <button onclick="handleMessageClick(event)">autofill message data</button>
+
+        <input type="submit" value="Submit" onclick="handleSubmit(event)">
+    </formHere is a customized, clean re-implementation of the full project structure and logic. It maintains the exact same functionality—form autofill, dark mode toggling, page navigation, division error handling, and asynchronous Promise simulation—written cleanly using standard modern JavaScript standards.
+
+---
+
+### Folder Name
+`js-practice`
+
+---
+
+### File 1: `index.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Form Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Main Entry Form -->
+  <form id="basicForm" class="form1">
+    <label for="name">Name:</label>
+    <input type="text" id="name" class="inputField" name="name" required>
+    <button type="button" onclick="handleNameClick(event)">Autofill Name "Abhishek"</button>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" class="inputField" name="email" required>
+    <button type="button" onclick="handleEmailClick(event)">Autofill Email</button>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" class="inputField" rows="4" required></textarea>
+    <button type="button" onclick="handleMessageClick(event)">Autofill Message</button>
+
+    <input type="submit" value="Submit" onclick="handleSubmit(event)">
+  </form>
+
+  <p>To turn on dark mode, click the button below:</p>
+  <button id="mode" type="button" onclick="toggleMode()">Turn on Dark mode</button>
+
+  <br><br>
+  <button id="ExceptionHandling" type="button" onclick="goToPage('exceptionHandling.html')">Go to Exception Handling Page</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
